@@ -4,6 +4,7 @@ html, body {
     margin:0;
 }
 
+/* Header */
 header {
     display: flex;
     height: 4rem;
@@ -116,5 +117,120 @@ header .mobile {
     header .mobile a img:hover {
         height: 3.5rem;
         width: auto;
+    }
+}
+
+/* Introductory Section */
+#introduction {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction .img-container {
+    display: inline-flex;
+}
+
+#introduction .img-container img {
+    max-width: 780px;
+    height: auto;
+    margin: 2rem 1.5rem;
+}
+
+#introduction .content {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8rem;
+    margin-left: 1rem;
+}
+#introduction h2 {
+    margin: 0 0;
+    font-size: 3rem;
+    font-weight: 900;
+    color: darkslategray;
+}
+
+#introduction h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color:darkslategrey;
+}
+
+#introduction .button {
+    padding: 0.5rem 0;
+    font-weight: 600;
+    background-color: darkslategray;
+    color:seashell;
+    font-size: 1.5rem;
+    max-width: 70%;
+    transition: opacity 300ms linear;
+}
+
+#introduction .button:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 1000px){
+    #introduction .img-container img {
+        width: 650px;
+        height: auto;
+    }   
+
+    #introduction h2 {
+        font-size: 2.85rem;
+        line-height: 0.9;
+    }
+
+    #introduction .content {
+        margin-left: 0rem;
+    }
+    #introduction h3 {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #introduction .img-container img {
+        width: 500px;
+        height: auto;
+    } 
+
+    #introduction h2 {
+        font-size: 2.65rem;
+    }
+
+    #introduction h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #introduction {
+        display: block;
+        padding-bottom: 1.5rem;
+    }
+    #introduction .img-container {
+        display: flex;
+        margin: 0;
+    }
+
+    #introduction .img-container img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #introduction .content {
+        margin: 2rem 1rem;
+        display: flex;
+        text-align: center;
+    }
+
+    #introduction .button {
+        max-width: 100%;
+        margin: 0 2rem;
     }
 }
