@@ -524,3 +524,105 @@ header .mobile {
         margin: 0.5rem;
     }
 }
+
+/* Thesis Exhibit */
+#thesis h2 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2.1rem;
+    color: darkslategray;
+    font-weight: 800;
+}
+
+#thesis .main-container{
+    display: flex;
+}
+
+#thesis .main-container .left-container, #thesis .right-container {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#thesis .main-container .left-container {
+    width: 60%;
+    margin:0rem 1.5rem 2rem 1.5rem;
+}
+
+#thesis .left-container video {
+    width: 100%;
+    height:auto;
+}
+
+#thesis .right-container {
+    width: 40%;
+}
+
+#thesis .right-container .sub-container {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid gainsboro;
+}
+
+#thesis .sub-container img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+#thesis .sub-container a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: darkslategrey;
+    font-weight: 600;
+}
+
+#thesis .sub-container p {
+    font-size: 1.1rem;
+    color:gray;
+    margin: 1.2rem 0;
+}
+
+#thesis .left-container .content h4{
+    font-size: 1.45rem;;
+    color: darkslategray;
+    font-weight: 600;
+    margin: 1.25rem 0;
+}   
+
+#thesis .left-container .content p {
+    font-size: 1rem;
+    color:gray;
+}
+
+@media only screen and (max-width: 1000px) {
+    #thesis .left-container {
+        width: 50%;
+    }
+
+    #thesis .right-container {
+        width: 50%;
+    }
+
+    #thesis .sub-container a {
+        font-size: 1.45rem;
+    }
+
+    #thesis .sub-container p {
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #thesis .right-container {
+        display: none;
+    }
+
+    #thesis .main-container {
+        justify-content: center;
+    }
+
+    #thesis .left-container {
+        flex-grow: 1;
+    }
+}
