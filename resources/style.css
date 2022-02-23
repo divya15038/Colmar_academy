@@ -70,7 +70,7 @@ header .mobile {
     }
 }
 
-@media only screen and (max-width: 710px) and (min-width:480px) {
+@media only screen and (max-width: 720px) and (min-width:480px) {
     header .mobile{
         display: flex;
     }
@@ -91,7 +91,7 @@ header .mobile {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     header {
         margin-top: 1rem;
         display: block;
@@ -232,5 +232,186 @@ header .mobile {
     #introduction .button {
         max-width: 100%;
         margin: 0 2rem;
+    }
+}
+
+/* Main Container */
+#main-container {
+    display: flex;
+}
+
+#main-container .mobile {
+    display: none;
+}
+
+/* Testimonial */
+#testimonial{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#testimonial img {
+    width:100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+#testimonial h2 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: darkslategrey;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+}
+#testimonial p {
+    font-size: 1.25rem;
+    color:gray;
+}
+
+#testimonial .details {
+    font-size: 1rem;
+    position: relative;
+    top: 1.15rem;
+}
+/* Notification */
+#notification {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+    border-left: 1px solid gainsboro;
+}
+
+#notification .container {
+    display: flex;
+    margin-left: 1rem; 
+    border: 0.5px solid gainsboro;
+}
+
+#notification img {
+    width: 28%;
+    height: auto;
+    margin-right: 1.5rem;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+#notification .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+}
+
+#notification h3 {
+    font-size: 1.75rem;
+    color: darkslategray;
+    margin-bottom: 0;
+}
+
+#notification p {
+    font-size: 1.15rem;
+    color: gray;
+}
+
+#notification a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size:1.2rem;
+    font-weight: 600;
+    transition: all 300ms linear;
+}
+
+#notification a:hover {
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 910px) {
+    #testimonial h2 {
+        font-size: 2.2rem;
+        line-height: 1;
+        font-weight: 750;
+    }
+
+    #testimonial p {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    #testimonial .details {
+        top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 811px) {
+    #notification h3 {
+        font-size: 1.45rem;
+        font-weight: 600;
+    }
+
+    #notification p {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
+    #notification img {
+        width: 35%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:723px) {
+    #testimonial {
+        display: none;
+    }
+
+    #notification h3 {
+        font-size: 2.15rem;
+        font-weight: 800;
+    }
+
+    #notification p {
+        font-size: 1.15rem;
+    }
+
+}
+
+@media only screen and (max-width: 515px) {
+    #notification {
+        display: flex;
+    }
+
+    #notification .desktop{
+        display: none;
+    }
+    #notification .mobile{
+        display: block;
+        width: 100%;
+    }
+
+    #notification .mobile img {
+        margin: 0;
+    }
+
+    #notification .container {
+        flex-direction: column;
+        justify-content: space-between;
+        border: none;
+        align-items: center;
+        margin: 0rem 1rem 3rem 1rem;
+    }
+
+    #notification .content {
+        width: 100%;
+    }
+    
+    #notification .content h3 {
+        margin-top: 0rem;
     }
 }
