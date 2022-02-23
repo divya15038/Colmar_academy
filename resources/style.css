@@ -626,3 +626,46 @@ header .mobile {
         flex-grow: 1;
     }
 }
+
+/* Footer */
+footer {
+    display: flex;
+    font-size: 1rem;
+    background-color: gainsboro;
+    color: darkslategray;
+    border-top: 0.5px solid darkslategray;
+    justify-content: space-between;
+}
+
+footer #copyright {
+    margin-top: 1rem;
+    margin-left: 1.5rem; 
+}
+
+footer .content {
+    display: flex;
+}
+
+footer .content a {
+    text-decoration: none;
+    color: darkslategray;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    transition: all 250ms linear;
+}
+
+footer .content a:hover {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 660px) {
+    footer .content {
+        display: none;
+    }
+
+    footer {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        justify-content: center;
+    }
+}
